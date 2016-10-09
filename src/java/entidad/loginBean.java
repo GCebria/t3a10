@@ -18,7 +18,7 @@ public class loginBean {
      * @return the user
      */
     public String getUser() {
-        return user;
+        return "Gerard";
     }
 
     /**
@@ -32,7 +32,7 @@ public class loginBean {
      * @return the password
      */
     public String getPassword() {
-        return password;
+        return "35597712Z";
     }
 
     /**

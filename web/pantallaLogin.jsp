@@ -29,14 +29,14 @@
                 String usuario, pass;
                 usuario = request.getParameter("nombre");
                 pass = request.getParameter("contrasena");
-                if (login.getUser() == request.getParameter("nombre") 
-                    && login.getPassword()== request.getParameter("contrasena")){
+                if (login.getUser().equals(request.getParameter("nombre"))
+                    && login.getPassword().equals(request.getParameter("contrasena"))){
             %>
                 <jsp:forward page="pantallaAcceso.jsp" />
-                <% }else{
-                
-}
+                <% }else{%>
+                  <jsp:forward page="pantallaLogin.jsp" />
+<%}
         
-        <%}%>
+        }%>
     </body>
 </html>
