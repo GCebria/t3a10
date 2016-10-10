@@ -34,7 +34,8 @@
             %>
                 <jsp:forward page="pantallaAcceso.jsp" />
                 <% }else{%>
-                  <jsp:forward page="pantallaLogin.jsp" />
+                    Error en la identificación. Inténtelo de nuevo. 
+                  <meta http-equiv="Refresh" CONTENT="10;url=pantallaLogin.jsp">
 <%}
         
         }%>
